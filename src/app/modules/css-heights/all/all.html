@@ -1,0 +1,50 @@
+<div class="h-lvh bg-blue-100 p-5 border-black border-b relative">
+  <h1 class="text-3xl  mb-3 font-bold ">
+    lvh: Large Viewport Height
+  </h1>
+  <h2 class="text-2xl mb-2">
+    Measures 1% of the largest possible viewport height—as if the browser chrome doesn’t shrink at all.
+    <br>
+    Full maximized viewport, ignores browser chrome collapse:    
+  </h2>
+  <p class="mb-3 text-2xl">In Simple word: it pretends browser’s top bar (URL bar) and bottom bar are not exist and 
+      it takes the full screen no matter if the browser bars shrink or not.</p>
+  <h3 class="text-2xl">
+    Use case: When you want full screen layout even if URL bar shrinks on scroll
+  </h3>
+  <div class="absolute bottom-0">Bottom text</div>
+</div>
+
+<div class="h-svh bg-red-100 p-5 border-black border-b relative">
+  <h1 class="text-3xl  mb-3 font-bold ">
+    svh: Small Viewport Height
+  </h1>
+  <h2 class="text-2xl mb-2 ">
+    Visible viewport when browser chrome is collapsed    
+  </h2>
+  <p class="mb-3 text-2xl">In Simple word: It measures the height of the part of the screen that is actually visible right now, even after the browser’s top and bottom bars shrink or hide.</p>
+  
+  <h3 class="text-2xl">
+    Use case: Avoid content being hidden behind the URL bar or bottom nav
+  </h3>
+  <div class="absolute bottom-0">Bottom text</div>
+</div>
+
+
+
+
+<div class="h-screen bg-red-300 p-5 border-black border-b relative">
+ <h1 class="text-3xl  mb-3 font-bold ">
+    vh: Viewport Height
+  </h1>
+  <h2 class="text-2xl mb-2 ">
+    Measures 1% of the viewport height as reported by the browser at the moment the page loads.
+    <br>
+    On mobile, 100vh can be taller than the visible area because it includes the space taken by the browser’s top and bottom bars, which may shrink or hide when scrolling.
+  </h2>
+  <h3 class="text-2xl">
+    Use case: Desktop
+    
+  </h3>
+  <div class="absolute bottom-0">Bottom text</div>
+</div>
