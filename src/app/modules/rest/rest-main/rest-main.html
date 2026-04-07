@@ -1,0 +1,138 @@
+
+<div class=" bg-red-100 p-5 border-black border-b relative">
+  <h1 class="text-3xl  mb-3 font-bold ">
+    REST (Representational State Transfer)    
+  </h1>
+  <p class="mb-3 text-2xl">
+
+  </p>
+</div>
+
+<div class="h-lvh bg-blue-100 p-5 border-black border-b relative">
+  <h1 class="text-3xl  mb-3 font-bold ">
+    Core REST Principles
+  </h1>
+  
+    <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 p-0">
+        <li class="block border rounded-xl p-4 hover:shadow-lg hover:border-blue-500 transition">
+            <h3 class="text-lg font-semibold mb-2">Client-Server Architecture</h3>
+            <p class="text-mg mb-1">Client (frontend) and server (backend) are separate</p>
+            <p class="text-mg mb-1">Client handles UI; server handles data and logic</p>
+            <p class="text-mg ">👉 Makes systems easier to scale and maintain</p>
+        </li>
+        <li class="block border rounded-xl p-4 hover:shadow-lg hover:border-blue-500 transition">
+            <h3 class="text-lg font-semibold mb-2">Statelessness</h3>
+            <p class="text-mg mb-1">Each request contains all the information needed</p>
+            <p class="text-mg mb-1">Server does not store client session state</p>
+            <p class="text-mg mb-1">Example: Each request have Authorization token and all</p>
+        </li>
+        <li class="block border rounded-xl p-4 hover:shadow-lg hover:border-blue-500 transition">
+            <h3 class="text-lg font-semibold mb-2">Cacheable</h3>
+            <p class="text-mg mb-1">Responses should indicate if they can be cached</p>
+            <p class="text-mg mb-1">Improves performance and reduces server load</p>
+        </li>
+        <li class="block border rounded-xl p-4 hover:shadow-lg hover:border-blue-500 transition">
+            <h3 class="text-lg font-semibold mb-2">Uniform Interface</h3>
+            <p class="text-mg mb-1">Everything is a resource (user, product, order)</p>
+            <p class="text-mg mb-1">Identified via URL, Ex: /users/123</p>
+            <p class="text-mg mb-1">Resource Representation in JSON</p>
+            <p class="text-mg mb-1">Requests/responses contain enough info</p>
+        </li>
+        <li class="block border rounded-xl p-4 hover:shadow-lg hover:border-blue-500 transition">
+            <h3 class="text-lg font-semibold mb-2">Layered System</h3>
+            <p class="text-mg mb-1">Client doesn't know if it's connected to server, proxy or load balancer?</p>
+        </li>
+        <li class="block border rounded-xl p-4 hover:shadow-lg hover:border-blue-500 transition">
+            <h3 class="text-lg font-semibold mb-2">Code on Demand (optional)</h3>
+            <p class="text-mg mb-1">Server can send executable code (rare in practice)</p>
+        </li>
+        
+        <li class="block border rounded-xl p-4 hover:shadow-lg hover:border-blue-500 transition">
+            <h3 class="text-lg font-semibold mb-2">Test</h3>
+            <p class="text-mg mb-1">Test</p>
+            <p class="text-mg mb-1">Test</p>
+            <p class="text-mg mb-1">Test</p>
+        </li>
+
+    </ul>
+</div>
+
+<div class="bg-red-100 p-5 border-black border-b relative">
+  <h1 class="text-3xl  mb-3 font-bold ">
+    What is a REST API?    
+  </h1>
+  <p class="mb-3 text-2xl">
+    A REST API is an API that follows REST principles and uses HTTP methods.
+  </p>
+  <p class="mb-3 text-2xl">It allows communication between</p>
+  <p class="mb-3 text-2xl">Frontend ↔ Backend</p>
+  <p class="mb-3 text-2xl">Apps ↔ Servers</p>
+  <p class="mb-3 text-2xl">Services ↔ Services</p>
+</div>
+
+
+<div class="bg-purple-100 p-5 border-black border-b relative">
+ <h1 class="text-3xl  mb-3 font-bold ">
+    Common HTTP Methods
+  </h1>
+  <p class="mb-3 text-2xl">
+    GET ↔ Retrieve data
+  </p>
+  <p class="mb-3 text-2xl">
+    POST ↔ Create resource
+  </p>
+  <p class="mb-3 text-2xl">
+    PUT ↔ Update entire resource
+  </p>
+  <p class="mb-3 text-2xl">
+    PATCH ↔ Partial update
+  </p>
+  <p class="mb-3 text-2xl">
+    DELETE ↔ Remove resource
+  </p>
+</div>
+
+<div class="bg-red-200 p-5 border-black border-b relative">
+ <h1 class="text-3xl  mb-3 font-bold ">
+    HTTP Status Codes
+  </h1>
+  <p class="mb-3 text-2xl">
+    200 ↔ OK
+  </p>
+  <p class="mb-3 text-2xl">200 ↔ OK</p>
+  <p class="mb-3 text-2xl">201 ↔ Created</p>
+  <p class="mb-3 text-2xl">400 ↔ Bad Request</p>
+  <p class="mb-3 text-2xl">401 ↔ Unauthrized</p>
+  <p class="mb-3 text-2xl">404 ↔ Not Found</p>
+  <p class="mb-3 text-2xl">500 ↔ Server Error</p>
+</div>
+
+<div class="h-svh bg-red-100 p-5 border-black border-b relative">
+  <h1 class="text-3xl  mb-3 font-bold ">
+    Authentication in REST APIs
+  </h1>
+  <p class="mb-3 text-2xl">
+    API Keys
+  </p>
+  <p class="mb-3 text-2xl">
+    OAUTH 2.0
+  </p>
+  <p class="mb-3 text-2xl">
+    JWT (JSON Web Tokens)
+  </p>
+  <h1 class="text-3xl  mb-3 font-bold mt-10">
+    Key Concepts in REST APIs
+  </h1>
+  <p class="mb-3 text-2xl">
+    Resource: Any object (user, product, etc.)
+  </p>
+  <p class="mb-3 text-2xl">
+    Endpoint: URL where resource lives:
+  </p>
+  <p class="mb-3 text-2xl">
+    Representation: JSON or XML     
+  </p>
+  <p class="mb-3 text-2xl">
+    Headers: Metadata (Auth, Content type)
+  </p>
+</div>

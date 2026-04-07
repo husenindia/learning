@@ -1,18 +1,30 @@
-  <ul class="absolute z-1 flex justify-center left-0 right-0" >
-  <li class="p-3">
-    <a href="javascript:void(0);" routerLink="/all" routerLinkActive="active">All</a>
+
+<ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 p-6">
+  <li>
+    <a routerLink="/vh" href="javascript:void(0);" class="block border rounded-xl p-4 hover:shadow-lg hover:border-blue-500 transition">
+      <h3 class="text-lg font-semibold mb-2">.Net Core</h3>
+    </a>
   </li>
-  <li class="p-3">
-    <a href="javascript:void(0);" routerLink="/lvh" routerLinkActive="active">LVH</a>
+
+  <li>
+    <a routerLink="/rest-all" href="javascript:void(0);" class="block border rounded-xl p-4 hover:shadow-lg hover:border-blue-500 transition">
+      <h3 class="text-lg font-semibold mb-2">REST APIs</h3>
+    </a>
   </li>
-  <li class="p-3">
-    <a href="javascript:void(0);" routerLink="/vh" routerLinkActive="active">VH</a>
+
+  <li>
+    <a routerLink="/vh" href="javascript:void(0);" class="block border rounded-xl p-4 hover:shadow-lg hover:border-blue-500 transition">
+      <h3 class="text-lg font-semibold mb-2">Angular</h3>
+      <p class="text-gray-600 text-sm">Description here</p>
+    </a>
   </li>
-   <li class="p-3">
-    <a href="javascript:void(0);" routerLink="/dvh" routerLinkActive="active">DVH</a>
+
+  <li>
+    <a routerLink="/css-main" href="javascript:void(0);" class="block border rounded-xl p-4 hover:shadow-lg hover:border-blue-500 transition">
+      <h3 class="text-lg font-semibold mb-2">CSS</h3>
+      <p class="text-gray-600 text-sm">Description here</p>
+    </a>
   </li>
-  <li class="p-3">
-    <a href="javascript:void(0);" routerLink="/svh" routerLinkActive="active">SVH</a>
-  </li>
+
 </ul>
 <router-outlet></router-outlet>
